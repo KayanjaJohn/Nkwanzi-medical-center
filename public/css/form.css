@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cage{
+	border: 2px ridge rgb(42, 161, 159);
+	padding: 24px;
+	border-radius: 12px;
+}
+input {
+	border: 2px solid rgb(47, 193, 255);
+	width: 100%;
+}
+select{
+	border: 2px solid rgb(47, 200, 255);
+	width: 100%;
+}
+
+label {
+	font-size: 20px;
+	display:flex;
+}
+
+.form-radio{
+	display: flex;
+}
+
+.form-radio label{
+	margin-right: 20px;
+}
+.radio{
+	display: flex;
+	
+}
+.radio label{
+	margin-left: 156px;
+	
+}
+
+button {
+	font-size: 15px;
+}

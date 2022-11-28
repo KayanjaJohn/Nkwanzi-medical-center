@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(to right, rgba(2, 201, 108, 0.4), rgba(3, 146, 189, 0.2)), url(../img/IMG-20221127-WA0001.jpg);
+    background-size: 90%;
+    background-position:center;
+}
+.entry{
+   display: flex;
+   justify-content: center;
+   transform: translateY(600px);
+}
+ 
+button{
+    border-radius: 12px;
+    border: 2px solid rgb(128, 194, 15);
+    padding: 12px;
+    width: 25%;
+    background: rgb(128, 194, 15);
+    color: rgb(27, 62, 62);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+button:hover{
+    transition: 0.5s ease-in-out;
+    background: rgb(240, 250, 222);
+    color: rgb(12, 27, 27);
+    border: 2px solid rgb(229, 247, 199);
+}
