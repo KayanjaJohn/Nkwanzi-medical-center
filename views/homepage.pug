@@ -1,0 +1,108 @@
+doctype html
+head
+  title Nkwanzi medical center
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS v5.2.1
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous')
+  link(rel='icon' href='/img/IMG-20221127-WA0001.jpg')
+  link(rel='stylesheet' href='/css/home.css')
+header
+  // place navbar here
+  nav.navbar.navbar-light.bg-light.fixed-top
+    .container-fluid
+      .navbar-brand(style='transform: translateY(-10px); margin-left: -12px;')
+        img(src='/img/IMG-20221126-WA0002.jpg' style='width: 400px; height: 83px;')
+      .nav-list
+        ul
+          a(href='/patientsReg')
+            li Recieption
+          a(href='treatment')
+            li Treatment
+          a(href='/staffReg')
+            li Medical team
+          a(href='/medicine')
+            li Medicine
+      button.icon(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' style='border: none;')
+        img(src='/img/Life-status.png' style='height: 60px; width: 60px;')
+      #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
+        .offcanvas-header
+          img(src='/img/IMG-20221127-WA0002.jpg' style='width: 500px; height: 100px; margin: 0;')
+          button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+        .offcanvas-body
+          ul.navbar-nav.justify-content-end.flex-grow-1.pe-3
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#') Home
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item.dropdown
+              a#dropdownId.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Dropdown
+              .dropdown-menu(aria-labelledby='dropdownId')
+                a.dropdown-item(href='#') Action 1
+                a.dropdown-item(href='#') Action 2
+main
+  #carouselId.carousel.slide(data-bs-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-bs-target='#carouselId' data-bs-slide-to='0' aria-current='true' aria-label='First slide')
+      li(data-bs-target='#carouselId' data-bs-slide-to='1' aria-label='Second slide')
+      li(data-bs-target='#carouselId' data-bs-slide-to='2' aria-label='Third slide')
+      li(data-bs-target='#carouselId' data-bs-slide-to='3' aria-label='fourth slide')
+      li(data-bs-target='#carouselId' data-bs-slide-to='4' aria-label='fifth slide')
+      li(data-bs-target='#carouselId' data-bs-slide-to='5' aria-label='sixth slide')
+      li(data-bs-target='#carouselId' data-bs-slide-to='6' aria-label='seventh slide')
+    .carousel-inner(role='listbox')
+      .carousel-item.active
+        img.d-block(src='/img/IMG-20221126-WA0002.jpg' alt='First slide')
+        .carousel-caption.d-none.d-md-block
+          h3 Title
+          p Description
+      .carousel-item
+        img.d-block(src='/img/Medical-stuff.jpg' alt='Second slide')
+        .carousel-caption.d-none.d-md-block
+          h3 Title
+          p Description
+      .carousel-item
+        img.d-block(src='/img/patients-care.jpg' alt='Second slide')
+        .carousel-caption.d-none.d-md-block
+          h3 Title
+          p Description
+      .carousel-item
+        img.d-block(src='/img/pregnant.jpg' alt='Third slide')
+        .carousel-caption.d-none.d-md-block
+          h3 Title
+          p Description
+      .carousel-item
+        img.d-block(src='/img/dental.png' alt='Second slide')
+        .carousel-caption.d-none.d-md-block
+          h3 Title
+          p Description
+      .carousel-item
+        img.d-block(src='/img/medical-councelling.jpg' alt='Second slide')
+        .carousel-caption.d-none.d-md-block
+          h3 Title
+          p Description
+      .carousel-item
+        img.d-block(src='/img/Nutrition.jpg' alt='Second slide')
+        .carousel-caption.d-none.d-md-block
+          h3 Title
+          p Description
+    button.carousel-control-prev(type='button' data-bs-target='#carouselId' data-bs-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.visually-hidden Previous
+    button.carousel-control-next(type='button' data-bs-target='#carouselId' data-bs-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.visually-hidden Next
+footer
+  // place footer here
+  .footer-content(style='text-align: center; color: #fff; height: 15rem;')
+    h2 Nkwanzi Medical Center
+    p
+      | Address: 
+      span Masooli village
+    p
+      | Tel: 
+      span +256708930925
+// Bootstrap JavaScript Libraries
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js' integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js' integrity='sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz' crossorigin='anonymous')

@@ -5,7 +5,7 @@
 
 .cage{
 	border: 2px ridge rgb(42, 161, 159);
-	padding: 24px;
+	padding: 10px;
 	border-radius: 12px;
 }
 input {
@@ -22,22 +22,55 @@ label {
 	display:flex;
 }
 
+.form-fields{
+	padding:6px 15px;
+}
+
 .form-radio{
 	display: flex;
+	justify-content: center;
 }
 
 .form-radio label{
 	margin-right: 20px;
 }
 .radio{
-	display: flex;
-	
+	display: flex;	
 }
 .radio label{
 	margin-left: 156px;
 	
 }
 
-button {
-	font-size: 15px;
+h1{
+	color: darkslategrey;
+	font-weight:900;
+	text-align: center;
+}
+h3{
+	color: darkslategrey;
+	font-weight:900;
+}
+
+hr{
+	background: rgb(27, 147, 147);
+	padding: 2px;
+}
+
+.button {
+	font-weight:700;
+	font-size: 18px;
+	background: aqua;
+	border-radius: 8px;
+	border: white;
+	padding: 4px;
+	margin-top: 18px;
+	transition: 0.6s ease-in-out;
+	overflow: hidden;
+}
+
+.button:hover{
+	background: #000;
+	color: white;
+	transform: translatey(10px);
 }

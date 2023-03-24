@@ -1,0 +1,112 @@
+doctype html
+head
+  title Medical team Register
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS v5.2.1
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous')
+  link(rel='stylesheet' href='css/form.css')
+header
+  // place navbar here
+main
+  .container.my-2 
+    .row.justify-content-center.align-items-center
+      h1 Nkwanzi medical center team
+      .col-lg-9.cage(style='text-align: center; margin-top:12px;')
+        h3 Medical Team Registration.
+        hr
+        form(action='/staffReg' name='register' enctype="multipart/form-data" method='POST' onsubmit='return validate2();')
+          .row.justify-content-center.align-items-center  
+            .col-lg-4.form-fields
+              label(for='')
+                | First Name:
+              input(type='text' name='fName')
+              small#fNameerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Last Name:
+              input(type='text' name='lName')
+              small#lNameerr
+            .col-lg-4.form-fields
+              label(for='')
+                | User Id:
+              input(type='text' name='userId')
+              small#userIderr
+            .col-lg-4.form-fields
+              label(for='')
+                | Date of birth:
+              input(type='date' name='DOB' placeholder='dd/mm/yyyy' max='2004-01-01')
+              small#DOBerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Date of registration:
+              input(type='date' name='regDate')
+              small#regDateerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Nin:
+              input(type='text' name='nin')
+              small#ninerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Image:
+              input(type='file' name='image')
+              small#imageerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Nationality:
+              input(type='text' name='nationality')
+              small#nationalityerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Role
+              select(name='role')
+                option(value="") Select option
+                option(value="Nutritionist") Nutritionist
+                option(value="Mid-wife") Mid-wife
+                option(value="Nurse") Nurse
+                option(value="Dentist") Dentist
+                option(value="Lab-technician") Lab Officer
+                option(value="Drug-technician") Drug Officer
+              small#roleerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Place of residence:
+              input(type='text' name='resName')
+              small#resNameerr
+            .col-lg-4.form-fields
+              label(for='')
+                | Phone number:
+              input(type='text' name='contact')
+              small#contacterr
+            .col-lg-12.form-fields
+              .form-radio
+                label(for='')
+                  | Gender 
+                  span(style='color:magenta; font-weight:900;') *
+                .radio
+                  label Male 
+                    span(style='color:teal; font-weight:900;')  :
+                  input(type='radio' name='sex' value='male' checked)
+                  label Female 
+                    span(style='color:teal; font-weight:900;')  :
+                  input(type='radio' name='sex' value='female')
+            .col-lg-5.form-fields
+              label(for='')
+                | Create password:
+              input(type='password' name='password')
+              small#passworderr
+            .col-lg-5.form-fields
+              label(for='')
+                | Comfirm password:
+              input(type='password' name='comfirmPassword')
+              small#comfirmPassworderr
+            .col-lg-6
+              input.button(type='submit' value='register')
+footer
+  // place footer here
+// Bootstrap JavaScript Libraries
+//- script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js' integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3' crossorigin='anonymous')
+//- script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js' integrity='sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz' crossorigin='anonymous')
+script(src='/js/teamRegValidation.js')

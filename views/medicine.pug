@@ -1,0 +1,75 @@
+doctype html
+head
+  title Patients Register
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS v5.2.1
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous')
+  link(rel='stylesheet' href='css/form.css')
+header
+  // place navbar here
+main
+  .container.my-4
+    .row.justify-content-center.align-items-center
+      h1 Nkwanzi medical center.
+      .col-lg-9.cage(style='text-align: center; margin: 20px')
+        h3 Drugs Registration.
+        hr
+        form(action='/medicine' name='register' enctype="multipart/form-data" method='POST' onsubmit='return validate3();')
+          .row.justify-content-center.align-items-center.g-2
+            .col-lg-6.form-fields
+              label(for='')
+                | Drug Name:
+              input(type='text' name='drugName')
+              small#drugNameerr
+            .col-lg-6.form-fields
+              label(for='')
+                | Sickness:
+              input(type='text' name='sickness')
+              small#sicknesserr
+            .col-lg-6.form-fields
+              label(for='')
+                | Drug image:
+              input(type='file' name='image')
+              small#imageerr
+            .col-lg-6.form-fields
+              label(for='')
+                | Date of register:
+              input(type='date' name='regDate')
+              small#dateerr
+            .col-lg-6.form-fields
+              label(for='')
+                | Weight(kg):
+              input(type='text' name='weight')
+              small#weighterr
+            .col-lg-6.form-fields
+              label(for='')
+                | Manufacture date:
+              input(type='date' name='manufactureDate')
+              small#mandateerr
+            .col-lg-6.form-fields
+              label(for='')
+                | Expiry date:
+              input(type='date' name='expiryDate')
+              small#expdateerr
+            .col-lg-6.form-fields
+              label(for='')
+                | Cost:
+              input(type='number' name='cost')
+              small#costerr
+            .col-lg-12.form-fields
+              label(for='')
+                  | Role:
+              select(name='role')
+                option(value="") Select option
+                option(value="Drug Officer") Drug Officer
+              small#roleerr
+            .col-lg-8
+              input.button(type='submit' value='register')
+footer
+  // place footer here
+// Bootstrap JavaScript Libraries
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js' integrity='sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js' integrity='sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz' crossorigin='anonymous')
+script(src='/js/medicineRegValidation.js')
